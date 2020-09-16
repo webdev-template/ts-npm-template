@@ -14,7 +14,7 @@ const resolve = function (filePath) {
     return path.join(__dirname,  filePath)
 }
 export default {
-    input: resolve('/src/index.js'), // 入口文件
+    input: resolve('/src/index.ts'), // 入口文件
     output: [{ // 出口文件
         file: resolve('dist/index.min.js'),
         format: 'umd',

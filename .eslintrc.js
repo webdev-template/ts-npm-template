@@ -1,16 +1,10 @@
 module.exports = {
-    parser: 'babel-eslint',
+    parser: '@typescript-eslint/parser',
     extends: [
         'alloy',
+        'alloy/typescript',
     ],
-    parserOptions: {
-        ecmaVersion: 2017,
-        sourceType: 'module',
-        ecmaFeatures: {
-            experimentalObjectRestSpread: true,
-            jsx: true
-        }
-    },
+    plugins: ['@typescript-eslint'], // eslint 默认规则对 TS 的补充
     env: {
         browser: true,
         node: true,
@@ -43,5 +37,9 @@ module.exports = {
         'no-debugger': 'error',
         'no-dupe-args': 'error',
         'no-dupe-keys': 'error',
+        '@typescript-eslint/consistent-type-definitions': [
+            "error",
+            "interface"
+        ]
     }
 }

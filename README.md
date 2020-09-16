@@ -1,8 +1,8 @@
 
  <div align="center">
  <img align="center" width="180" src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/logo-shadow.png" />
-  <h2>Javascript Npm Template</h2>
-  <blockquote>关于该库的一些简单介绍，比如作用，依赖等等</blockquote>
+  <h2>TypeScript Npm Template</h2>
+  <blockquote>使用Rollup和Babel构建TypeScript代码，并发布NPM包。</blockquote>
   <img alt="npm" src="https://img.shields.io/npm/dw/test">
   <img alt="Travis (.org)" src="https://img.shields.io/travis/rust-lang/rust">
   <img alt="npm" src="https://img.shields.io/npm/v/test">
