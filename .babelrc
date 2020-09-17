@@ -11,7 +11,12 @@
         "@babel/typescript"
     ],
     "plugins": [
-        "@babel/plugin-transform-runtime",
+        [
+            "@babel/plugin-transform-runtime",
+            {
+                "corejs": 3 // 指定 runtime-corejs 的版本，目前有 2 3 两个版本
+            }
+        ],
         "@babel/proposal-object-rest-spread", // ...object
         "@babel/plugin-proposal-class-properties", // static 属性
         "@babel/plugin-syntax-dynamic-import" // import 动态引入
