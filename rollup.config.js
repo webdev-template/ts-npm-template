@@ -19,14 +19,14 @@ export default {
         file: resolve('dist/index.min.js'),
         format: 'umd',
         name: 'npm-lib',
-        plugins: [
-            clear({
-                targets: ["dist"]
-            }),
-            babel({
-                exclude: 'node_modules/**'
-            }), terser()
-        ]
     }],
+    plugins: [
+        clear({
+            targets: ["dist"]
+        }),
+        babel({
+            exclude: 'node_modules/**'
+        }), terser()
+    ],
     external: []
 }
