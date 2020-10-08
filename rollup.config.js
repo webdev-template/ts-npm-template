@@ -6,7 +6,8 @@ import {
 } from "rollup-plugin-terser"
 
 // 输出文件夹清除
-import clear from "rollup-plugin-clear"
+import del from 'rollup-plugin-delete'
+
 const path = require('path')
 
 const resolve = function (filePath) {
@@ -21,7 +22,7 @@ export default {
         name: 'npm-lib',
     }],
     plugins: [
-        clear({
+        del({
             targets: ["dist"]
         }),
         babel({
